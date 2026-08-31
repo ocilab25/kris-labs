@@ -1,3 +1,7 @@
 packages:
   - "apps/*"
   - "packages/*"
+
+# React Native/Metro + native builds on Windows need real, short paths —
+# the isolated .pnpm layout produces >250-char object paths that break ninja.
+nodeLinker: hoisted

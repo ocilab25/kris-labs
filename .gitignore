@@ -17,6 +17,9 @@ dist/
 .env.*
 *.local
 
+# demo proof artifacts (local only)
+.demo/
+
 # misc
 .DS_Store
 *.log
